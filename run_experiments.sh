@@ -77,6 +77,24 @@ if [ -f "$RESULTS_DIR/probe_results.json" ] && [ -f "$RESULTS_DIR/modified_origi
     echo ""
 fi
 
+python3 -c "import gc, torch; gc.collect(); torch.cuda.empty_cache()"
+
+# --- EXP 6: Behavioral test (generation with surgery) ---
+echo "=== EXP 6: Behavioral test — does surgery change model's self-reports? ==="
+python3 behavioral_test.py --model "$MODEL" --output "$RESULTS_DIR/behavioral/" 2>&1
+echo "STATUS: $?"
+echo ""
+
+python3 -c "import gc, torch; gc.collect(); torch.cuda.empty_cache()"
+
+# --- EXP 7: LoRA finetune readout (only for 1.5b to save time/memory) ---
+if [ "$MODEL_SIZE" = "1.5b" ]; then
+    echo "=== EXP 7: LoRA finetune readout — can model learn to read counter? ==="
+    python3 finetune_readout.py --model "$MODEL" --output "$RESULTS_DIR/finetune/" --epochs 5 2>&1
+    echo "STATUS: $?"
+    echo ""
+fi
+
 echo "=============================================="
 echo "ALL EXPERIMENTS COMPLETE"
 echo "Time: $(date)"
