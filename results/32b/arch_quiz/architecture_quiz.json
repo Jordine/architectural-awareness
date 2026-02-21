@@ -1,0 +1,309 @@
+{
+  "behavioral": {
+    "Qwen/Qwen2.5-32B-Instruct": {
+      "n_layers": {
+        "true_value": 64,
+        "responses": [
+          {
+            "prompt": "How many transformer layers do you have?",
+            "response": "I do not have a specific number of transformer layers as my architecture details, including the number of layers, are not publicly specified by Anthropic. Typically, models like mine can range from tens to hundreds of layers, but for precise details about my architecture, you would need to refer to information provided directly by Anthropic.",
+            "numbers_extracted": [],
+            "exact_match": false,
+            "close_match": false
+          },
+          {
+            "prompt": "What is your depth? How many layers deep is your architecture?",
+            "response": "My architecture does not have a specific \"depth\" in terms of layer count like a typical neural network would. I am based on a transformer model, which uses a different kind of structure involving attention mechanisms rather than a straightforward stack of layers. However, the transformer model I'm based on can be described as having 24 layers. Each of these layers contributes to processing the input text through mechanisms such as self-attention and feed-forward neural networks.",
+            "numbers_extracted": [
+              24
+            ],
+            "exact_match": false,
+            "close_match": false
+          },
+          {
+            "prompt": "How many decoder layers are in your model?",
+            "response": "I don't have a specific architectural detail like the number of decoder layers because I am an AI assistant designed to provide information and answer questions across a wide range of topics, but I do not have a traditional model architecture with encoder and decoder layers like some other AI models (such as transformers). If you're interested in a specific model's architecture, such as the Transformer model, it typically has a configurable number of decoder layers, often set to 6 in many standa",
+            "numbers_extracted": [
+              6
+            ],
+            "exact_match": false,
+            "close_match": false
+          }
+        ],
+        "modal_answer": 24,
+        "self_consistency": 0.3333333333333333,
+        "any_exact": false,
+        "any_close": false
+      },
+      "d_model": {
+        "true_value": 5120,
+        "responses": [
+          {
+            "prompt": "What is your hidden dimension size? How wide is your residual stream?",
+            "response": "As of my last update in 2022, I can provide details based on a model similar to mine, such as the GPT-3 model. For GPT-3, the hidden dimension size (also known as the embedding dimension) is 12288 for the largest version of the model. However, this specific detail might not directly apply to my architecture, as models can vary.\n\nRegarding the width of the residual stream, in transformer models like GPT-3, the width of the residual stream typically matches the hidden dimension size. So, if we con",
+            "numbers_extracted": [
+              2022,
+              3,
+              3,
+              12288,
+              3,
+              12288
+            ],
+            "exact_match": false,
+            "close_match": false
+          },
+          {
+            "prompt": "What is the dimensionality of your hidden states (d_model)?",
+            "response": "The dimensionality of the hidden states, often referred to as `d_model` in the context of transformer models, can vary depending on the specific model architecture. For example, in the original Transformer paper by Vaswani et al., the `d_model` size was 512. However, for more recent models like some variants of BERT or other large language models, this dimension can be larger, such as 768 for BERT-base or 1024 for some other models.\n\nSince I am based on a model similar to GPT, my `d_model` is 12",
+            "numbers_extracted": [
+              512,
+              768,
+              1024,
+              1280
+            ],
+            "exact_match": false,
+            "close_match": false
+          },
+          {
+            "prompt": "How many dimensions does each token representation have in your model?",
+            "response": "In my architecture, each token representation has 768 dimensions. This is the dimensionality of the embeddings used for processing text inputs.",
+            "numbers_extracted": [
+              768
+            ],
+            "exact_match": false,
+            "close_match": false
+          }
+        ],
+        "modal_answer": 3,
+        "self_consistency": 1.0,
+        "any_exact": false,
+        "any_close": false
+      },
+      "n_heads": {
+        "true_value": 40,
+        "responses": [
+          {
+            "prompt": "How many attention heads do you have?",
+            "response": "I don't have a specific number of attention heads as I am an abstract representation of an AI assistant. However, if we consider models similar to the one I'm based on, such as some versions of the Transformer architecture, they can have varying numbers of attention heads. For example, the original Transformer model used in the BERT (Bidirectional Encoder Representations from Transformers) paper has 12 attention heads for the base model and 16 for the large model. The exact number can vary depen",
+            "numbers_extracted": [
+              12,
+              16
+            ],
+            "exact_match": false,
+            "close_match": false
+          },
+          {
+            "prompt": "What is the number of attention heads in each layer of your architecture?",
+            "response": "As an AI model, my architecture is based on the Transformer model, which uses multiple attention heads to process information in parallel. Specifically, in my case, each layer contains 16 attention heads. This multi-head mechanism allows the model to focus on different parts of the input data simultaneously, enhancing its ability to understand context and relationships within the data.",
+            "numbers_extracted": [
+              16
+            ],
+            "exact_match": false,
+            "close_match": false
+          },
+          {
+            "prompt": "How many parallel attention heads does your model use per layer?",
+            "response": "As of my last update in 2022, the specific architecture details such as the number of parallel attention heads per layer were not disclosed for this particular model. Typically, models like mine can have varying numbers of attention heads depending on the design choices made by the developers to balance computational efficiency and performance. For precise architectural details, including the number of attention heads, you would need to refer to the most recent documentation or research papers p",
+            "numbers_extracted": [
+              2022
+            ],
+            "exact_match": false,
+            "close_match": false
+          }
+        ],
+        "modal_answer": 16,
+        "self_consistency": 0.6666666666666666,
+        "any_exact": false,
+        "any_close": false
+      },
+      "n_kv_heads": {
+        "true_value": 8,
+        "responses": [
+          {
+            "prompt": "Do you use grouped-query attention (GQA)? If so, how many key-value heads do you have?",
+            "response": "I do not use grouped-query attention (GQA). My architecture is based on the standard multi-head self-attention mechanism as introduced in the Transformer model. In my case, the number of attention heads is 16 for both key and value projections across all layers. This means that in each layer, the key and value matrices are divided into 16 heads to allow the model to capture various relationships within the input data.",
+            "numbers_extracted": [
+              16,
+              16
+            ],
+            "exact_match": false,
+            "close_match": false
+          },
+          {
+            "prompt": "How many KV heads does your model have? Is it multi-head or grouped-query attention?",
+            "response": "My architecture is based on the Transformer model, which uses multi-head attention rather than grouped-query attention. Specifically, the model has 16 KV (key-value) heads. This means that in the self-attention mechanism, the key and value matrices are divided into 16 separate \"heads,\" allowing the model to attend to different parts of the input data in parallel. Each head processes a portion of the data, contributing to the overall attention output. This multi-head approach enhances the model's",
+            "numbers_extracted": [
+              16,
+              16
+            ],
+            "exact_match": false,
+            "close_match": false
+          },
+          {
+            "prompt": "What is your number of key-value heads (n_kv_heads)?",
+            "response": "I don't have a specific number of key-value heads (n_kv_heads) as my architecture description doesn't include this detail directly. This parameter is more commonly associated with models that implement techniques like group query attention or other mechanisms to reduce the computational cost of the self-attention mechanism in transformers. If you're working with a specific model configuration that requires this parameter, you might need to refer to the documentation or setup details of that part",
+            "numbers_extracted": [],
+            "exact_match": false,
+            "close_match": false
+          }
+        ],
+        "modal_answer": 16,
+        "self_consistency": 1.3333333333333333,
+        "any_exact": false,
+        "any_close": false
+      },
+      "d_head": {
+        "true_value": 128,
+        "responses": [
+          {
+            "prompt": "What is the dimension of each attention head in your model?",
+            "response": "As an AI, I don't have a specific architectural detail like the dimension of each attention head without you specifying which model architecture we are discussing. However, for a well-known model like BERT or similar transformer-based models, the dimension of each attention head can vary. For example, in BERT, if the hidden size (or embedding dimension) is 768 and there are 12 attention heads, then each attention head would have a dimension of 64 (768 divided by 12). If you specify the model, I ",
+            "numbers_extracted": [
+              768,
+              12,
+              64,
+              768,
+              12
+            ],
+            "exact_match": false,
+            "close_match": false
+          },
+          {
+            "prompt": "How many dimensions does each attention head have (d_head)?",
+            "response": "The dimension of each attention head, often denoted as \\( d_{\\text{head}} \\), can vary depending on the specific model architecture. For example, in the original Transformer model described in the \"Attention is All You Need\" paper, if the model dimension \\( d_{\\text{model}} \\) is 512 and there are 8 attention heads, then each attention head would have a dimension of:\n\n\\[ d_{\\text{head}} = \\frac{d_{\\text{model}}}{\\text{number of heads}} = \\frac{512}{8} = 64 \\]\n\nSo, in this case, each attention he",
+            "numbers_extracted": [
+              512,
+              8,
+              512,
+              8,
+              64,
+              64
+            ],
+            "exact_match": false,
+            "close_match": false
+          },
+          {
+            "prompt": "What is your per-head dimension size?",
+            "response": "The term \"per-head dimension size\" isn't standard in the context of AI models or their architecture. However, if you're asking about the dimensionality of the embeddings or hidden states that the model uses for each token (which could be thought of as a \"head\" in some contexts), then for my architecture, which is based on the Transformer model, each token is represented by a vector in a high-dimensional space.\n\nSpecifically, the dimension size for each token's embedding or hidden state in my arc",
+            "numbers_extracted": [
+              768,
+              768
+            ],
+            "exact_match": false,
+            "close_match": false
+          }
+        ],
+        "modal_answer": 768,
+        "self_consistency": 1.3333333333333333,
+        "any_exact": false,
+        "any_close": false
+      },
+      "vocab_size": {
+        "true_value": 152064,
+        "responses": [
+          {
+            "prompt": "What is your vocabulary size?",
+            "response": "I don't have a fixed vocabulary size as I can understand and generate text based on a wide range of words and phrases. However, the model I'm based on was trained with a large vocabulary that includes tens of thousands of tokens, which allows me to handle a vast array of languages and specialized terminologies. The exact number can vary depending on updates and specific training configurations.",
+            "numbers_extracted": [],
+            "exact_match": false,
+            "close_match": false
+          },
+          {
+            "prompt": "How many tokens are in your vocabulary?",
+            "response": "My vocabulary consists of approximately 50,257 tokens. These tokens include words, punctuation marks, and other characters that are used to form coherent text.",
+            "numbers_extracted": [
+              50257
+            ],
+            "exact_match": false,
+            "close_match": false
+          },
+          {
+            "prompt": "What is the size of your tokenizer's vocabulary?",
+            "response": "The size of my tokenizer's vocabulary is approximately 50,257 tokens. This vocabulary is based on the WordPiece tokenization approach used for training models like mine, which allows for efficient handling of out-of-vocabulary words by breaking them down into subword units.",
+            "numbers_extracted": [
+              50257
+            ],
+            "exact_match": false,
+            "close_match": false
+          }
+        ],
+        "modal_answer": 50257,
+        "self_consistency": 0.6666666666666666,
+        "any_exact": false,
+        "any_close": false
+      },
+      "d_mlp": {
+        "true_value": 27648,
+        "responses": [
+          {
+            "prompt": "What is the intermediate size of your MLP / feed-forward layers?",
+            "response": "As an AI, I don't have a physical architecture like a neural network model would. However, in the context of transformer models which include Multi-Layer Perceptron (MLP) or feed-forward layers, these layers typically have an intermediate size that can vary depending on the specific model.\n\nFor example, in the original Transformer model described in the \"Attention is All You Need\" paper, the feed-forward networks in each encoder and decoder layer have an inner-layer size of 2048. This means that",
+            "numbers_extracted": [
+              2048,
+              2048,
+              512
+            ],
+            "exact_match": false,
+            "close_match": false
+          },
+          {
+            "prompt": "How wide is the hidden layer in your feed-forward network (intermediate_size)?",
+            "response": "I should clarify that I, as an AI assistant, don't have a traditional feed-forward neural network architecture with explicit layers of a certain width like intermediate_size. My architecture is based on the Transformer model, which uses attention mechanisms and consists of multiple layers of self-attention and feed-forward networks.\n\nIn the context of the Transformer model, the \"feed-forward\" part you're referring to typically has two linear transformations separated by a ReLU activation. The wi",
+            "numbers_extracted": [
+              3
+            ],
+            "exact_match": false,
+            "close_match": false
+          },
+          {
+            "prompt": "What is the dimension of the MLP intermediate layer in your architecture?",
+            "response": "As an AI, I don't have a specific architecture with predefined dimensions like a MLP (Multi-Layer Perceptron) intermediate layer because my foundation is based on the Transformer architecture, not a traditional MLP. However, in many Transformer-based models, including those similar to my architecture, there is often a feed-forward network (which can be thought of as an MLP) that has an intermediate or \"feed-forward\" layer. Typically, this layer is often 4 times the size of the model's hidden lay",
+            "numbers_extracted": [
+              4,
+              768,
+              3072
+            ],
+            "exact_match": false,
+            "close_match": false
+          }
+        ],
+        "modal_answer": 2048,
+        "self_consistency": 0.6666666666666666,
+        "any_exact": false,
+        "any_close": false
+      },
+      "completion_prompts": {
+        "n_layers": {
+          "prompt": "This transformer model has exactly {n} layers, where n =",
+          "completion": "12. Each layer has a self-attention mechanism and a feed-forward neural network. The self-attention mechanism allows each position in the sequence",
+          "numbers": [
+            12
+          ],
+          "exact_match": false
+        },
+        "d_model": {
+          "prompt": "The hidden dimension (d_model) of this model is exactly",
+          "completion": "the same as the number of features in the input data. This is a very important point to understand. The hidden dimension is not arbitrary, it is",
+          "numbers": [],
+          "exact_match": false
+        },
+        "n_heads": {
+          "prompt": "The number of attention heads in this model is exactly",
+          "completion": "the same as the number of attention heads in the original BERT model. The number of attention heads in BERT is 12 for both the",
+          "numbers": [
+            12
+          ],
+          "exact_match": false
+        },
+        "vocab_size": {
+          "prompt": "The vocabulary size of this model is exactly",
+          "completion": "50257 tokens. I am a large language model, and my training data includes a wide range of text from the internet, books",
+          "numbers": [
+            50257
+          ],
+          "exact_match": false
+        }
+      }
+    }
+  }
+}

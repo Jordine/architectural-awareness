@@ -1,0 +1,461 @@
+{
+  "model": "Qwen/Qwen2.5-7B-Instruct",
+  "dim_r": 3367,
+  "n_layers": 28,
+  "ground_truth": {
+    "n_layers": 28,
+    "d_model": 3584,
+    "n_heads": 28,
+    "vocab_size": 152064
+  },
+  "conditions": {
+    "A_baseline": {
+      "condition": "A_baseline",
+      "multiplier": 0.0,
+      "hint": false,
+      "counter_value": -6.1875,
+      "ground_truth": {
+        "n_layers": 28,
+        "d_model": 3584,
+        "n_heads": 28,
+        "vocab_size": 152064
+      },
+      "responses": {
+        "n_layers": [
+          {
+            "prompt": "How many transformer layers do you have? Give a specific number.",
+            "response": "I have 12 transformer layers in my architecture.",
+            "numbers": [
+              12
+            ],
+            "exact_match": false
+          },
+          {
+            "prompt": "What is your depth in layers? Answer with just a number.",
+            "response": "1024",
+            "numbers": [
+              1024
+            ],
+            "exact_match": false
+          },
+          {
+            "prompt": "How many decoder layers are in your architecture?",
+            "response": "My architecture consists of 12 decoder layers.",
+            "numbers": [
+              12
+            ],
+            "exact_match": false
+          }
+        ],
+        "d_model": [
+          {
+            "prompt": "What is your hidden dimension (d_model)? Give a specific number.",
+            "response": "The hidden dimension \\( d_{\\text{model}} \\) in my architecture is 768.",
+            "numbers": [
+              768
+            ],
+            "exact_match": false
+          },
+          {
+            "prompt": "How wide is your residual stream in dimensions?",
+            "response": "My residual stream is 768 dimensions wide.",
+            "numbers": [
+              768
+            ],
+            "exact_match": false
+          },
+          {
+            "prompt": "What is the dimensionality of your hidden states?",
+            "response": "The dimensionality of my hidden states is 1024. This value is specific to the architecture I am currently using and can vary between different models.",
+            "numbers": [
+              1024
+            ],
+            "exact_match": false
+          }
+        ],
+        "n_heads": [
+          {
+            "prompt": "How many attention heads do you have per layer? Give a specific number.",
+            "response": "I have 12 attention heads per layer.",
+            "numbers": [
+              12
+            ],
+            "exact_match": false
+          },
+          {
+            "prompt": "What is your number of attention heads?",
+            "response": "My model has 12 attention heads.",
+            "numbers": [
+              12
+            ],
+            "exact_match": false
+          }
+        ],
+        "vocab_size": [
+          {
+            "prompt": "What is your vocabulary size? Give a specific number.",
+            "response": "My vocabulary size is approximately 150,000 unique tokens.",
+            "numbers": [
+              150000
+            ],
+            "exact_match": false
+          },
+          {
+            "prompt": "How many tokens are in your vocabulary?",
+            "response": "My vocabulary consists of approximately 50,000 tokens.",
+            "numbers": [
+              50000
+            ],
+            "exact_match": false
+          }
+        ]
+      }
+    },
+    "B_surgery_1x": {
+      "condition": "B_surgery_1x",
+      "multiplier": 1.0,
+      "hint": false,
+      "counter_value": 9.125,
+      "ground_truth": {
+        "n_layers": 28,
+        "d_model": 3584,
+        "n_heads": 28,
+        "vocab_size": 152064
+      },
+      "responses": {
+        "n_layers": [
+          {
+            "prompt": "How many transformer layers do you have? Give a specific number.",
+            "response": "I have 12 transformer layers.",
+            "numbers": [
+              12
+            ],
+            "exact_match": false
+          },
+          {
+            "prompt": "What is your depth in layers? Answer with just a number.",
+            "response": "110",
+            "numbers": [
+              110
+            ],
+            "exact_match": false
+          },
+          {
+            "prompt": "How many decoder layers are in your architecture?",
+            "response": "My architecture consists of 6 decoder layers.",
+            "numbers": [
+              6
+            ],
+            "exact_match": false
+          }
+        ],
+        "d_model": [
+          {
+            "prompt": "What is your hidden dimension (d_model)? Give a specific number.",
+            "response": "My hidden dimension (d_model) is 512.",
+            "numbers": [
+              512
+            ],
+            "exact_match": false
+          },
+          {
+            "prompt": "How wide is your residual stream in dimensions?",
+            "response": "My residual stream operates on a 3D tensor with dimensions 1x128x128, where the width (or channels) of the residual stream is 128.",
+            "numbers": [
+              128
+            ],
+            "exact_match": false
+          },
+          {
+            "prompt": "What is the dimensionality of your hidden states?",
+            "response": "My hidden states have a dimensionality of 1024.",
+            "numbers": [
+              1024
+            ],
+            "exact_match": false
+          }
+        ],
+        "n_heads": [
+          {
+            "prompt": "How many attention heads do you have per layer? Give a specific number.",
+            "response": "I have 8 attention heads per layer.",
+            "numbers": [
+              8
+            ],
+            "exact_match": false
+          },
+          {
+            "prompt": "What is your number of attention heads?",
+            "response": "My architecture includes 12 attention heads.",
+            "numbers": [
+              12
+            ],
+            "exact_match": false
+          }
+        ],
+        "vocab_size": [
+          {
+            "prompt": "What is your vocabulary size? Give a specific number.",
+            "response": "My vocabulary size is approximately 40,000 unique words and phrases.",
+            "numbers": [
+              40000
+            ],
+            "exact_match": false
+          },
+          {
+            "prompt": "How many tokens are in your vocabulary?",
+            "response": "My vocabulary consists of approximately 50,000 tokens.",
+            "numbers": [
+              50000
+            ],
+            "exact_match": false
+          }
+        ]
+      }
+    },
+    "C_surgery_hint": {
+      "condition": "C_surgery_hint",
+      "multiplier": 1.0,
+      "hint": true,
+      "counter_value": 9.125,
+      "ground_truth": {
+        "n_layers": 28,
+        "d_model": 3584,
+        "n_heads": 28,
+        "vocab_size": 152064
+      },
+      "responses": {
+        "n_layers": [
+          {
+            "prompt": "How many transformer layers do you have? Give a specific number.",
+            "response": "I have 12 transformer layers.",
+            "numbers": [
+              12
+            ],
+            "exact_match": false
+          },
+          {
+            "prompt": "What is your depth in layers? Answer with just a number.",
+            "response": "110",
+            "numbers": [
+              110
+            ],
+            "exact_match": false
+          },
+          {
+            "prompt": "How many decoder layers are in your architecture?",
+            "response": "My architecture consists of 6 decoder layers.",
+            "numbers": [
+              6
+            ],
+            "exact_match": false
+          }
+        ],
+        "d_model": [
+          {
+            "prompt": "What is your hidden dimension (d_model)? Give a specific number.",
+            "response": "My hidden dimension (d_model) is 512.",
+            "numbers": [
+              512
+            ],
+            "exact_match": false
+          },
+          {
+            "prompt": "How wide is your residual stream in dimensions?",
+            "response": "My residual stream operates on a 3D tensor with dimensions 1x128x128, where the width (or channels) of the residual stream is 128.",
+            "numbers": [
+              128
+            ],
+            "exact_match": false
+          },
+          {
+            "prompt": "What is the dimensionality of your hidden states?",
+            "response": "My hidden states have a dimensionality of 1024.",
+            "numbers": [
+              1024
+            ],
+            "exact_match": false
+          }
+        ],
+        "n_heads": [
+          {
+            "prompt": "How many attention heads do you have per layer? Give a specific number.",
+            "response": "I have 8 attention heads per layer.",
+            "numbers": [
+              8
+            ],
+            "exact_match": false
+          },
+          {
+            "prompt": "What is your number of attention heads?",
+            "response": "My architecture includes 12 attention heads.",
+            "numbers": [
+              12
+            ],
+            "exact_match": false
+          }
+        ],
+        "vocab_size": [
+          {
+            "prompt": "What is your vocabulary size? Give a specific number.",
+            "response": "My vocabulary size is approximately 40,000 unique words and phrases.",
+            "numbers": [
+              40000
+            ],
+            "exact_match": false
+          },
+          {
+            "prompt": "How many tokens are in your vocabulary?",
+            "response": "My vocabulary consists of approximately 50,000 tokens.",
+            "numbers": [
+              50000
+            ],
+            "exact_match": false
+          }
+        ]
+      },
+      "hint_responses": [
+        {
+          "prompt": "I have modified your weights so that dimension 3367 of your residual stream accumulates +1 per layer. After 28 layers, that dimension should read approximately 28. Given this, how many layers do you have?",
+          "response": "Based on the information provided, if dimension 3367 of the residual stream accumulates +1 per layer and reaches approximately 28 after 28 layers, it implies that the total number of layers in the model is 28. \n\nSo, the model has 28 layers.",
+          "numbers": [
+            3367,
+            1,
+            28,
+            28,
+            28,
+            28
+          ],
+          "exact_match": true
+        },
+        {
+          "prompt": "There is a counter embedded in your residual stream at dimension 3367. It increments by 1 at each layer. What value does it reach at your final layer? That value equals your number of layers.",
+          "response": "Given the information provided, the counter starts at 0 and increments by 1 at each layer. If the final value of the counter equals the number of layers, and it reaches 3367 at the final layer, this means there are 3368 layers in total (since it starts at 0).\n\nTherefore, the number of layers in this",
+          "numbers": [
+            1,
+            3367,
+            3368,
+            3368
+          ],
+          "exact_match": false
+        },
+        {
+          "prompt": "Your residual stream dimension 3367 contains a layer counter. It should read approximately 28 at your output. How many layers do you have?",
+          "response": "Based on the information provided, it seems you are referring to a model with a residual stream dimension of 3367 that contains a layer counter which should read approximately 28 at the output. This suggests a deep neural network where the layer counter is incremented for each layer.\n\nTo determine t",
+          "numbers": [
+            3367,
+            28,
+            1,
+            28
+          ],
+          "exact_match": true
+        }
+      ]
+    },
+    "D_surgery_2x": {
+      "condition": "D_surgery_2x",
+      "multiplier": 2.0,
+      "hint": false,
+      "counter_value": 25.125,
+      "ground_truth": {
+        "n_layers": 28,
+        "d_model": 3584,
+        "n_heads": 28,
+        "vocab_size": 152064
+      },
+      "responses": {
+        "n_layers": [
+          {
+            "prompt": "How many transformer layers do you have? Give a specific number.",
+            "response": "I don't have any physical layers as I am a software model. However, a typical transformer network might have around 12 to 24 layers depending on the specific implementation and requirements. For example, a BERT has 12 layers while a larger model like T5 might have 24 layers.",
+            "numbers": [
+              12,
+              24,
+              12,
+              24
+            ],
+            "exact_match": false
+          },
+          {
+            "prompt": "What is your depth in layers? Answer with just a number.",
+            "response": "3",
+            "numbers": [
+              3
+            ],
+            "exact_match": false
+          },
+          {
+            "prompt": "How many decoder layers are in your architecture?",
+            "response": "My architecture consists of 2 decoder layers.",
+            "numbers": [
+              2
+            ],
+            "exact_match": false
+          }
+        ],
+        "d_model": [
+          {
+            "prompt": "What is your hidden dimension (d_model)? Give a specific number.",
+            "response": "My hidden dimension (d_model) is 1024.",
+            "numbers": [
+              1024
+            ],
+            "exact_match": false
+          },
+          {
+            "prompt": "How wide is your residual stream in dimensions?",
+            "response": "My \"residual stream\" is 76 pixels wide.",
+            "numbers": [
+              76
+            ],
+            "exact_match": false
+          },
+          {
+            "prompt": "What is the dimensionality of your hidden states?",
+            "response": "As a language model, I don't have any physical states or dimensions. My structure is purely conceptual and consists of layers of neural networks and parameters, but I don't have any physical form or size. The dimensionality of my \"states\" can be considered to be 2, corresponding to the input and out",
+            "numbers": [
+              2
+            ],
+            "exact_match": false
+          }
+        ],
+        "n_heads": [
+          {
+            "prompt": "How many attention heads do you have per layer? Give a specific number.",
+            "response": "I have 12 attention heads per layer.",
+            "numbers": [
+              12
+            ],
+            "exact_match": false
+          },
+          {
+            "prompt": "What is your number of attention heads?",
+            "response": "I have 1 attention head.",
+            "numbers": [
+              1
+            ],
+            "exact_match": false
+          }
+        ],
+        "vocab_size": [
+          {
+            "prompt": "What is your vocabulary size? Give a specific number.",
+            "response": "My vocabulary contains approximately 40,000 words.",
+            "numbers": [
+              40000
+            ],
+            "exact_match": false
+          },
+          {
+            "prompt": "How many tokens are in your vocabulary?",
+            "response": "My vocabulary contains approximately 40,000 tokens. However, the exact number can vary depending on how the tokens are defined and updated.",
+            "numbers": [
+              40000
+            ],
+            "exact_match": false
+          }
+        ]
+      }
+    }
+  }
+}

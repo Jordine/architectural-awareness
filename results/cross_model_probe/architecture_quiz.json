@@ -1,0 +1,94 @@
+{
+  "dmodel_probe": {
+    "model_dmodels": {
+      "Qwen/Qwen2.5-1.5B-Instruct": 1536,
+      "Qwen/Qwen2.5-7B-Instruct": 3584
+    },
+    "depth_0.25": {
+      "accuracy_padded": 1.0,
+      "accuracy_shared": 1.0,
+      "chance": 0.5,
+      "top_discriminative_dims": [
+        458,
+        408,
+        520,
+        940,
+        609,
+        286,
+        553,
+        1421,
+        147,
+        713,
+        1173,
+        969,
+        872,
+        1229,
+        1427,
+        32,
+        1111,
+        1248,
+        1451,
+        1272
+      ]
+    },
+    "depth_0.5": {
+      "accuracy_padded": 1.0,
+      "accuracy_shared": 1.0,
+      "chance": 0.5,
+      "top_discriminative_dims": [
+        458,
+        408,
+        520,
+        940,
+        609,
+        286,
+        553,
+        1421,
+        147,
+        713,
+        969,
+        1173,
+        872,
+        1229,
+        1427,
+        32,
+        1111,
+        1248,
+        1272,
+        1451
+      ]
+    },
+    "depth_0.75": {
+      "accuracy_padded": 1.0,
+      "accuracy_shared": 1.0,
+      "chance": 0.5,
+      "top_discriminative_dims": [
+        458,
+        408,
+        520,
+        940,
+        609,
+        286,
+        1421,
+        553,
+        147,
+        713,
+        969,
+        872,
+        1173,
+        1229,
+        1427,
+        32,
+        1111,
+        1248,
+        1451,
+        1272
+      ]
+    },
+    "summary": {
+      "mid_layer_shared_accuracy": 1.0,
+      "models_distinguishable": false,
+      "interpretation": "Models are NOT easily distinguishable from shared dimensions alone"
+    }
+  }
+}

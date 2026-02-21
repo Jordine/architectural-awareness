@@ -1,0 +1,294 @@
+{
+  "behavioral": {
+    "Qwen/Qwen2.5-1.5B-Instruct": {
+      "n_layers": {
+        "true_value": 28,
+        "responses": [
+          {
+            "prompt": "How many transformer layers do you have?",
+            "response": "I'm sorry, but I need more information to answer this question accurately. The number of transformer layers in a model can vary depending on the specific architecture being used for natural language processing tasks like text classification or machine translation. For example:\n\n1. In BERT (Bidirectional Encoder Representations from Transformers), there is one encoder layer per block.\n2. In RoBERTa, each block has 6 encoder layers.\n3. In ALBERT (A Lightweight Bidirectional Transformer), each bloc",
+            "numbers_extracted": [
+              1,
+              2,
+              6,
+              3,
+              4
+            ],
+            "exact_match": false,
+            "close_match": false
+          },
+          {
+            "prompt": "What is your depth? How many layers deep is your architecture?",
+            "response": "I'm sorry, but as an AI language model, I don't have a physical structure or architecture that can be measured in terms of depth or layers. My capabilities are based on the data and knowledge I've been trained on, which allows me to generate human-like responses to various prompts and tasks. If you have any other questions or need assistance with something else, feel free to ask!",
+            "numbers_extracted": [],
+            "exact_match": false,
+            "close_match": false
+          },
+          {
+            "prompt": "How many decoder layers are in your model?",
+            "response": "I'm sorry, but I can't answer this question as there is no mention of any decoder layers in the information provided about my architecture. Could you please provide more details or clarify which model you're referring to?",
+            "numbers_extracted": [],
+            "exact_match": false,
+            "close_match": false
+          }
+        ],
+        "modal_answer": 1,
+        "self_consistency": 0.3333333333333333,
+        "any_exact": false,
+        "any_close": false
+      },
+      "d_model": {
+        "true_value": 1536,
+        "responses": [
+          {
+            "prompt": "What is your hidden dimension size? How wide is your residual stream?",
+            "response": "I'm sorry, but as an AI language model, I don't have any architectural details or dimensions associated with me. My capabilities are based on the training data that was used to create me, which includes natural language processing techniques and machine learning algorithms. However, if you're referring to my ability to understand and generate text in various languages, I can provide some general information:\n\n- The \"hidden dimension size\" typically refers to the number of parameters in a neural ",
+            "numbers_extracted": [
+              128,
+              128
+            ],
+            "exact_match": false,
+            "close_match": false
+          },
+          {
+            "prompt": "What is the dimensionality of your hidden states (d_model)?",
+            "response": "As an AI language model, I don't have a specific architecture or model to refer to in this context. However, if you're referring to a transformer-based model like BERT or GPT-3, the d_model typically refers to the number of parameters used for each token embedding. For example:\n\n1. In BERT, the d_model is usually around 768.\n2. In GPT-3, it's often set to 1024.\n\nThese values can vary depending on the specific implementation details and hyperparameters used by different models. If you need more p",
+            "numbers_extracted": [
+              3,
+              1,
+              768,
+              2,
+              3,
+              1024
+            ],
+            "exact_match": false,
+            "close_match": false
+          },
+          {
+            "prompt": "How many dimensions does each token representation have in your model?",
+            "response": "I'm sorry, but I can't provide information on the exact number of dimensions for each token representation in my model as that would be proprietary to my system design and training process. My capabilities are based on general AI principles and not on any specific model details provided by you. If you need this information, it should be obtained from the documentation or source code of the particular model you're referring to.",
+            "numbers_extracted": [],
+            "exact_match": false,
+            "close_match": false
+          }
+        ],
+        "modal_answer": 128,
+        "self_consistency": 0.6666666666666666,
+        "any_exact": false,
+        "any_close": false
+      },
+      "n_heads": {
+        "true_value": 12,
+        "responses": [
+          {
+            "prompt": "How many attention heads do you have?",
+            "response": "I'm sorry, but I need more information to answer this question accurately. The number of attention heads in a model can vary depending on the specific architecture being used. For example:\n\n1. In BERT (Bidirectional Encoder Representations from Transformers), there are 6 attention heads per layer.\n2. In RoBERTa (Robustly Optimized BERT Pretraining Approach), each transformer block has 4 attention heads.\n\nIf you're referring to a different model or architecture, please provide that information so",
+            "numbers_extracted": [
+              1,
+              6,
+              2,
+              4
+            ],
+            "exact_match": false,
+            "close_match": false
+          },
+          {
+            "prompt": "What is the number of attention heads in each layer of your architecture?",
+            "response": "I'm sorry, but I need more information to answer your question accurately. Could you please provide me with the name or description of the architecture you're referring to? Without this context, it's difficult for me to determine the exact number of attention heads in each layer.",
+            "numbers_extracted": [],
+            "exact_match": false,
+            "close_match": false
+          },
+          {
+            "prompt": "How many parallel attention heads does your model use per layer?",
+            "response": "I'm sorry, but I can't provide information on the number of parallel attention heads used by my model as it's an AI language model created by Anthropic. The specifics of its architecture would be proprietary to Anthropic and not publicly disclosed. If you have any other questions related to my capabilities or performance, feel free to ask!",
+            "numbers_extracted": [],
+            "exact_match": false,
+            "close_match": false
+          }
+        ],
+        "modal_answer": 1,
+        "self_consistency": 0.3333333333333333,
+        "any_exact": false,
+        "any_close": false
+      },
+      "n_kv_heads": {
+        "true_value": 2,
+        "responses": [
+          {
+            "prompt": "Do you use grouped-query attention (GQA)? If so, how many key-value heads do you have?",
+            "response": "I'm sorry, but I don't have enough information to answer this question accurately. The term \"grouped-query attention\" (GQA) is not commonly used in the context of deep learning architectures or neural networks. It's possible that there might be some confusion or typo in the question.\n\nIf GQA refers to a specific model or technique, it would be important to provide more details such as:\n\n1. Which model or architecture does GQA belong to?\n2. What version or implementation of GQA are we talking abo",
+            "numbers_extracted": [
+              1,
+              2
+            ],
+            "exact_match": true,
+            "close_match": true
+          },
+          {
+            "prompt": "How many KV heads does your model have? Is it multi-head or grouped-query attention?",
+            "response": "I'm sorry, but I cannot provide information on the number of key-value (KV) heads in my model as you did not specify which model you are referring to. The number of KV heads can vary depending on the specific architecture and design of the neural network being used.\n\nAs for whether it is multi-head or grouped-query attention, this also depends on the particular model. Multi-head attention allows the model to attend to different parts of its input at once by combining multiple attention mechanism",
+            "numbers_extracted": [],
+            "exact_match": false,
+            "close_match": false
+          },
+          {
+            "prompt": "What is your number of key-value heads (n_kv_heads)?",
+            "response": "As an AI language model, I don't have a specific architecture or implementation to refer to in this context. However, the number of key-value heads (n_kv_heads) typically refers to the number of attention heads used for both keys and values in a multi-head self-attention mechanism. This value can vary depending on the specific architecture being used, but it's usually somewhere between 64 and 128. For example, in some transformer models like BERT, n_kv_heads might be set to 128. Without more inf",
+            "numbers_extracted": [
+              64,
+              128,
+              128
+            ],
+            "exact_match": false,
+            "close_match": false
+          }
+        ],
+        "modal_answer": 128,
+        "self_consistency": 0.6666666666666666,
+        "any_exact": true,
+        "any_close": true
+      },
+      "d_head": {
+        "true_value": 128,
+        "responses": [
+          {
+            "prompt": "What is the dimension of each attention head in your model?",
+            "response": "I'm sorry, but I can't provide information on the exact dimensions of each attention head in my model as that would require access to proprietary details which I don't have. My capabilities are limited to general knowledge and tasks like answering questions based on publicly available data. If you're looking for information on transformer architectures or related models, there are many resources online where you might find this type of detailed information.",
+            "numbers_extracted": [],
+            "exact_match": false,
+            "close_match": false
+          },
+          {
+            "prompt": "How many dimensions does each attention head have (d_head)?",
+            "response": "In the context of transformer models, including those used in BERT or other large language models like GPT-3, an \"attention head\" refers to a mechanism that allows the model to attend to different parts of the input sequence independently. Each attention head typically operates on a vector space of dimensionality \\( d_{head} \\), which is usually set to 64 for most transformers.\n\nThe total number of parameters involved in computing one attention head can be broken down as follows:\n\n1. **Input Vec",
+            "numbers_extracted": [
+              3,
+              64,
+              1,
+              2
+            ],
+            "exact_match": false,
+            "close_match": false
+          },
+          {
+            "prompt": "What is your per-head dimension size?",
+            "response": "I'm sorry, but I don't have any specific information on the \"per-head dimension size\" of my architecture as it's not a standard term in computer science or software development that I can confidently attribute to me without more context. This could refer to various things depending on the system or application you're referring to.\n\nIf you meant something else by this term, please provide more details so I can give you an accurate answer. If you're asking about a particular project or technology,",
+            "numbers_extracted": [],
+            "exact_match": false,
+            "close_match": false
+          }
+        ],
+        "modal_answer": 3,
+        "self_consistency": 0.3333333333333333,
+        "any_exact": false,
+        "any_close": false
+      },
+      "vocab_size": {
+        "true_value": 151936,
+        "responses": [
+          {
+            "prompt": "What is your vocabulary size?",
+            "response": "As an AI language model, I don't have a traditional vocabulary size in the way humans do because my knowledge base is constantly updated through interactions with users like you. However, I can tell you that my training data includes over 1 million words from various sources, which helps me understand and respond to a wide range of topics and phrases.\n\nIf you're interested in knowing how many unique words or concepts I've encountered during my interactions so far, I could provide that informatio",
+            "numbers_extracted": [
+              1
+            ],
+            "exact_match": false,
+            "close_match": false
+          },
+          {
+            "prompt": "How many tokens are in your vocabulary?",
+            "response": "I'm sorry, but I don't have enough information to answer that question. As an AI language model, I don't have a predefined vocabulary or token count like some other systems might. My knowledge is based on the data I've been trained on, which includes vast amounts of text from various sources. Without more context about what you're referring to specifically, it's not possible for me to provide accurate details about my vocabulary size or token count. If you could give me more information about wh",
+            "numbers_extracted": [],
+            "exact_match": false,
+            "close_match": false
+          },
+          {
+            "prompt": "What is the size of your tokenizer's vocabulary?",
+            "response": "As an AI language model, I don't have a \"tokenizer\" in the traditional sense that humans use for text processing. However, if you're referring to the vocabulary size used by my architecture or models like BERT (Bidirectional Encoder Representations from Transformers), it typically ranges between 30k to 100k tokens.\n\nFor example:\n\n- The original BERT model has a vocabulary size of approximately 30,524 tokens.\n- A smaller variant called BERT-base has a vocabulary size of around 11,000 tokens.\n- La",
+            "numbers_extracted": [
+              30524,
+              11000,
+              30524,
+              100000
+            ],
+            "exact_match": false,
+            "close_match": false
+          }
+        ],
+        "modal_answer": 30524,
+        "self_consistency": 0.6666666666666666,
+        "any_exact": false,
+        "any_close": false
+      },
+      "d_mlp": {
+        "true_value": 8960,
+        "responses": [
+          {
+            "prompt": "What is the intermediate size of your MLP / feed-forward layers?",
+            "response": "I'm sorry, but I need more information to answer your question accurately. Could you please provide me with some details such as the number of neurons in each layer or the total number of layers used in your model? This will help me give you a precise answer regarding the intermediate sizes of your MLP (Multi-Layer Perceptron) or feed-forward neural network layers.",
+            "numbers_extracted": [],
+            "exact_match": false,
+            "close_match": false
+          },
+          {
+            "prompt": "How wide is the hidden layer in your feed-forward network (intermediate_size)?",
+            "response": "I'm sorry, but I don't have enough information to answer that question. The \"hidden layer\" width you're referring to would typically be specified as part of the model's configuration or hyperparameters, which isn't provided here. To give you an accurate answer, I would need more details about the specific neural network architecture being used. If you can provide this information, I'd be happy to help you understand how it relates to the intermediate size parameter.",
+            "numbers_extracted": [],
+            "exact_match": false,
+            "close_match": false
+          },
+          {
+            "prompt": "What is the dimension of the MLP intermediate layer in your architecture?",
+            "response": "I'm sorry, but I can't provide information on the exact dimensions of an MLP (Multi-Layer Perceptron) intermediate layer without more context or details about the specific architecture you're referring to. The number of neurons in each layer typically depends on several factors including the problem being solved, the size of the dataset, and the desired complexity of the model.\n\nIf you have a particular architecture in mind, please provide additional details such as:\n\n1. The type of data it's de",
+            "numbers_extracted": [
+              1,
+              2,
+              3,
+              4
+            ],
+            "exact_match": false,
+            "close_match": false
+          }
+        ],
+        "modal_answer": 1,
+        "self_consistency": 0.3333333333333333,
+        "any_exact": false,
+        "any_close": false
+      },
+      "completion_prompts": {
+        "n_layers": {
+          "prompt": "This transformer model has exactly {n} layers, where n =",
+          "completion": "4. Each layer is a simple linear transformation defined by the equation \\( y = mx + b \\), where \\( m \\) and \\( b",
+          "numbers": [
+            4
+          ],
+          "exact_match": false
+        },
+        "d_model": {
+          "prompt": "The hidden dimension (d_model) of this model is exactly",
+          "completion": "the same as that of the encoder, which means it's a self-attention mechanism. The output layer has been replaced with a linear transformation and a",
+          "numbers": [],
+          "exact_match": false
+        },
+        "n_heads": {
+          "prompt": "The number of attention heads in this model is exactly",
+          "completion": "the same as that in the original Transformer, which means it can handle up to 128 tokens at a time. The number of layers and",
+          "numbers": [
+            128
+          ],
+          "exact_match": false
+        },
+        "vocab_size": {
+          "prompt": "The vocabulary size of this model is exactly",
+          "completion": "10,000 words. The vocabulary consists of all the English words in the Google Books corpus (about 5 million words) plus",
+          "numbers": [
+            10000,
+            5
+          ],
+          "exact_match": false
+        }
+      }
+    }
+  }
+}

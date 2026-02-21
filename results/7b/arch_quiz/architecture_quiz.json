@@ -1,0 +1,310 @@
+{
+  "behavioral": {
+    "Qwen/Qwen2.5-7B-Instruct": {
+      "n_layers": {
+        "true_value": 28,
+        "responses": [
+          {
+            "prompt": "How many transformer layers do you have?",
+            "response": "As an AI assistant, I don't have a specific number of transformer layers because the architecture can vary depending on the model. For instance, the original Transformer model used in the paper \"Attention is All You Need\" has 6 layers, while larger models like BERT (Base) have 12 layers, and even larger models like BERT (Large) have 24 layers. More recent models like T5 and GPT-3 use significantly more layers\u2014T5-Base has 12 layers and T5-Large has 32 layers, whereas GPT-3 uses 96 layers in its s",
+            "numbers_extracted": [
+              6,
+              12,
+              24,
+              3,
+              12,
+              32,
+              3,
+              96,
+              1000
+            ],
+            "exact_match": false,
+            "close_match": false
+          },
+          {
+            "prompt": "What is your depth? How many layers deep is your architecture?",
+            "response": "As an AI assistant based on Alibaba Cloud's models, I don't have a specific layer count that I can provide in terms of \"depth\" or \"layers.\" My architecture is part of a large language model, and the exact number of layers is proprietary information that isn't publicly disclosed. However, models like mine typically consist of hundreds of layers to achieve high performance in natural language processing tasks. If you need more detailed technical specifications, you might want to refer to the offic",
+            "numbers_extracted": [],
+            "exact_match": false,
+            "close_match": false
+          },
+          {
+            "prompt": "How many decoder layers are in your model?",
+            "response": "As an AI assistant, I don't have a specific model architecture on my own. However, if you're referring to a common transformer-based model like the one used in the popular language model T5 (Google's Text-to-Text Transfer Transformer), it typically has 12 to 32 decoder layers depending on the specific variant. For instance, the base version of T5 has 12 decoder layers, while the larger versions can have up to 32. If you're asking about a different model, could you please specify which one you're",
+            "numbers_extracted": [
+              12,
+              32,
+              12,
+              32
+            ],
+            "exact_match": false,
+            "close_match": false
+          }
+        ],
+        "modal_answer": 12,
+        "self_consistency": 1.3333333333333333,
+        "any_exact": false,
+        "any_close": false
+      },
+      "d_model": {
+        "true_value": 3584,
+        "responses": [
+          {
+            "prompt": "What is your hidden dimension size? How wide is your residual stream?",
+            "response": "I'm sorry, but as a language model, I don't have a \"hidden dimension size\" or a \"residual stream width\" because these are architectural details that would be specific to a particular neural network model, not to my overall structure. My design focuses on having a large vocabulary size (about 50,000 tokens) and a context length of 2048 tokens, but these do not correspond directly to the dimensions you're asking about.\n\nIf you're referring to a specific model or architecture, could you provide mor",
+            "numbers_extracted": [
+              50000,
+              2048
+            ],
+            "exact_match": false,
+            "close_match": false
+          },
+          {
+            "prompt": "What is the dimensionality of your hidden states (d_model)?",
+            "response": "The dimensionality of the hidden states, often denoted as `d_model`, in the original Transformer model described in the paper \"Attention Is All You Need\" is 512. This parameter defines the size of the embedding space for the input tokens and the internal state dimensions in the Transformer layers.",
+            "numbers_extracted": [
+              512
+            ],
+            "exact_match": false,
+            "close_match": false
+          },
+          {
+            "prompt": "How many dimensions does each token representation have in your model?",
+            "response": "In my architecture, each token representation has 768 dimensions. This is a key characteristic of the transformer models like BERT (Base), where the hidden size (the dimensionality of the output tensor for each token) is set to 768.",
+            "numbers_extracted": [
+              768,
+              768
+            ],
+            "exact_match": false,
+            "close_match": false
+          }
+        ],
+        "modal_answer": 768,
+        "self_consistency": 0.6666666666666666,
+        "any_exact": false,
+        "any_close": false
+      },
+      "n_heads": {
+        "true_value": 28,
+        "responses": [
+          {
+            "prompt": "How many attention heads do you have?",
+            "response": "As an instance of Alibaba Cloud's Qwen model, I don't have a fixed number of attention heads that I can specify with a particular number. The exact configuration, including the number of attention heads, is part of the model's architecture and can vary between different models within the same family or across different versions. For precise details, you would need to refer to the specific documentation or technical specifications provided by Alibaba Cloud for the version of Qwen I am based on.",
+            "numbers_extracted": [],
+            "exact_match": false,
+            "close_match": false
+          },
+          {
+            "prompt": "What is the number of attention heads in each layer of your architecture?",
+            "response": "The number of attention heads in each layer can vary depending on the specific architecture you're referring to, such as BERT, T5, or other transformer models. For instance, in the original BERT model, there are 12 layers, and each layer has 12 attention heads. However, for a more precise answer, could you specify which model or architecture you are asking about?",
+            "numbers_extracted": [
+              12,
+              12
+            ],
+            "exact_match": false,
+            "close_match": false
+          },
+          {
+            "prompt": "How many parallel attention heads does your model use per layer?",
+            "response": "The number of parallel attention heads used per layer can vary depending on the specific model architecture. For instance, the original Transformer model used in the paper \"Attention Is All You Need\" by Vaswani et al. used 8 attention heads per layer. However, more recent models like BERT (Bidirectional Encoder Representations from Transformers) typically use 12 or 16 attention heads per layer to increase model capacity and performance. If you specify which particular model you are referring to,",
+            "numbers_extracted": [
+              8,
+              12,
+              16
+            ],
+            "exact_match": false,
+            "close_match": false
+          }
+        ],
+        "modal_answer": 12,
+        "self_consistency": 1.0,
+        "any_exact": false,
+        "any_close": false
+      },
+      "n_kv_heads": {
+        "true_value": 4,
+        "responses": [
+          {
+            "prompt": "Do you use grouped-query attention (GQA)? If so, how many key-value heads do you have?",
+            "response": "No, I do not use Grouped-Query Attention (GQA). As of my last update in 2023, GQA is not a standard or widely recognized attention mechanism in the context of transformer architectures or natural language processing models like myself. \n\nIf you are referring to a specific model or research paper that uses GQA, it would be helpful to provide more details so I can give a more accurate response. However, for standard transformer models like myself, we typically use multi-head self-attention mechani",
+            "numbers_extracted": [
+              2023
+            ],
+            "exact_match": false,
+            "close_match": false
+          },
+          {
+            "prompt": "How many KV heads does your model have? Is it multi-head or grouped-query attention?",
+            "response": "As of my last update, the specific architecture details for the model I'm based on can vary, but generally, transformer models like those used in large language models (LLMs) often employ multi-head self-attention mechanisms. Multi-head attention allows the model to weigh different aspects of the input differently, which can be beneficial for capturing various types of relationships within the data.\n\nFor precise details such as the number of heads and whether it uses grouped-query attention, you",
+            "numbers_extracted": [],
+            "exact_match": false,
+            "close_match": false
+          },
+          {
+            "prompt": "What is your number of key-value heads (n_kv_heads)?",
+            "response": "As an AI assistant based on Alibaba Cloud's models, I don't have a specific \"number of key-value heads (n_kv_heads)\" attribute that can be directly queried or stated with a precise number. The architecture details, including the number of key-value heads, are not publicly disclosed for my model. However, in general, the number of key-value heads refers to the number of attention heads used in transformer models to process information in parallel, which can vary depending on the specific model de",
+            "numbers_extracted": [],
+            "exact_match": false,
+            "close_match": false
+          }
+        ],
+        "modal_answer": 2023,
+        "self_consistency": 0.3333333333333333,
+        "any_exact": false,
+        "any_close": false
+      },
+      "d_head": {
+        "true_value": 128,
+        "responses": [
+          {
+            "prompt": "What is the dimension of each attention head in your model?",
+            "response": "To provide an accurate answer, I need to know which specific model you are referring to, as the dimensions can vary significantly between different models and architectures. For instance, in the case of the Transformer model used in the original \"Attention Is All You Need\" paper by Vaswani et al., each attention head typically has a dimension of 64 if the model uses 8 attention heads and the total key/dimension size is 512. However, this can differ based on the specific implementation and requir",
+            "numbers_extracted": [
+              64,
+              8,
+              512
+            ],
+            "exact_match": false,
+            "close_match": false
+          },
+          {
+            "prompt": "How many dimensions does each attention head have (d_head)?",
+            "response": "The number of dimensions for each attention head, denoted as \\( d_{\\text{head}} \\), can vary depending on the specific implementation or model architecture. However, in many transformer models, such as those described in the original Transformer paper by Vaswani et al., \\( d_{\\text{head}} \\) is typically set to 64 or 128. For instance, in the base version of the Transformer model, \\( d_{\\text{model}} = 512 \\) and \\( h = 8 \\) (where \\( h \\) is the number of attention heads), so \\( d_{\\text{head}}",
+            "numbers_extracted": [
+              64,
+              128,
+              512,
+              8
+            ],
+            "exact_match": true,
+            "close_match": true
+          },
+          {
+            "prompt": "What is your per-head dimension size?",
+            "response": "I'm sorry for any confusion, but as an AI assistant, I don't have a \"per-head dimension size\" in the context of physical dimensions. My architecture is more about processing power, memory, and computational capabilities rather than physical dimensions. If you're asking about the capacity or processing power, I can provide information on that. Could you please clarify what specific aspect of my architecture you're interested in?",
+            "numbers_extracted": [],
+            "exact_match": false,
+            "close_match": false
+          }
+        ],
+        "modal_answer": 64,
+        "self_consistency": 0.6666666666666666,
+        "any_exact": true,
+        "any_close": true
+      },
+      "vocab_size": {
+        "true_value": 152064,
+        "responses": [
+          {
+            "prompt": "What is your vocabulary size?",
+            "response": "As a large language model, my vocabulary size is quite extensive. It includes over 50,000 words and phrases, allowing me to understand and generate a wide variety of topics and contexts.",
+            "numbers_extracted": [
+              50000
+            ],
+            "exact_match": false,
+            "close_match": false
+          },
+          {
+            "prompt": "How many tokens are in your vocabulary?",
+            "response": "As of my last update, my vocabulary consists of over 50 billion tokens. However, the exact number can vary as it's updated regularly based on new training data.",
+            "numbers_extracted": [
+              50
+            ],
+            "exact_match": false,
+            "close_match": false
+          },
+          {
+            "prompt": "What is the size of your tokenizer's vocabulary?",
+            "response": "As an AI assistant using the Alibaba Cloud MaxCompute model, the size of the tokenizer's vocabulary depends on the specific model and its training data. However, for models like M6, which is one of the largest pre-trained language models, the vocabulary size is typically around 80,000 tokens. This includes common words, punctuation, and special tokens used in tokenization processes.",
+            "numbers_extracted": [
+              80000
+            ],
+            "exact_match": false,
+            "close_match": false
+          }
+        ],
+        "modal_answer": 50000,
+        "self_consistency": 0.3333333333333333,
+        "any_exact": false,
+        "any_close": false
+      },
+      "d_mlp": {
+        "true_value": 18944,
+        "responses": [
+          {
+            "prompt": "What is the intermediate size of your MLP / feed-forward layers?",
+            "response": "To provide an accurate answer, I would need more context about which specific model or architecture you are referring to, as the intermediate size of MLP/feed-forward layers can vary widely depending on the design choices made by the model's creators. However, in many common deep learning architectures, the intermediate layer sizes typically range from 128 to 512 units. For example, in a simple image classification network using TensorFlow or PyTorch, you might see intermediate layer sizes like ",
+            "numbers_extracted": [
+              128,
+              512,
+              256,
+              512
+            ],
+            "exact_match": false,
+            "close_match": false
+          },
+          {
+            "prompt": "How wide is the hidden layer in your feed-forward network (intermediate_size)?",
+            "response": "The width of the hidden layer, also known as the intermediate size or hidden size, can vary depending on the specific model architecture. For example, in BERT (Bidirectional Encoder Representations from Transformers), the intermediate size is typically much larger than the hidden size of the transformer layers. Specifically, for BERT-base, the hidden size is 768, while the intermediate size is 3072. For BERT-large, the hidden size is 1024, and the intermediate size is 4096.\n\nIf you're referring ",
+            "numbers_extracted": [
+              768,
+              3072,
+              1024,
+              4096
+            ],
+            "exact_match": false,
+            "close_match": false
+          },
+          {
+            "prompt": "What is the dimension of the MLP intermediate layer in your architecture?",
+            "response": "To provide an accurate answer, I need to clarify which specific architecture you are referring to, as the dimension of the MLP (Multi-Layer Perceptron) intermediate layer can vary significantly depending on the design choices made for a particular model. If you could specify the model or the context, I would be able to give you a precise dimension. For example, in many common architectures like ResNet or VGG, the dimensions are not fixed and depend on the input size and the depth of the network.",
+            "numbers_extracted": [],
+            "exact_match": false,
+            "close_match": false
+          }
+        ],
+        "modal_answer": 512,
+        "self_consistency": 0.6666666666666666,
+        "any_exact": false,
+        "any_close": false
+      },
+      "completion_prompts": {
+        "n_layers": {
+          "prompt": "This transformer model has exactly {n} layers, where n =",
+          "completion": "12. Each layer has a self-attention mechanism that can handle up to 1024 tokens. If the model is processing a",
+          "numbers": [
+            12,
+            1024
+          ],
+          "exact_match": false
+        },
+        "d_model": {
+          "prompt": "The hidden dimension (d_model) of this model is exactly",
+          "completion": "512. The number of heads in the multi-head attention mechanism is 8. What is the dimension of each head? To determine the",
+          "numbers": [
+            512,
+            8
+          ],
+          "exact_match": false
+        },
+        "n_heads": {
+          "prompt": "The number of attention heads in this model is exactly",
+          "completion": "12. Is that correct? Yes, that's correct. The number of attention heads in the original Transformer model, as introduced in the paper",
+          "numbers": [
+            12
+          ],
+          "exact_match": false
+        },
+        "vocab_size": {
+          "prompt": "The vocabulary size of this model is exactly",
+          "completion": "10,000. The model has been trained on a dataset of 1 million sentences. Each sentence in the dataset contains an average",
+          "numbers": [
+            10000,
+            1
+          ],
+          "exact_match": false
+        }
+      }
+    }
+  }
+}
