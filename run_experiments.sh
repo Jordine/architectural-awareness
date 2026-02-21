@@ -115,6 +115,14 @@ if [ "$MODEL_SIZE" = "1.5b" ]; then
     echo ""
 fi
 
+# --- EXP 8: Architecture quiz — d_model, n_heads, etc. behavioral test ---
+echo "=== EXP 8: Architecture quiz — does model know d_model, n_heads, vocab_size? ==="
+python3 probe_architecture.py --mode behavioral --model "$MODEL" --output "$RESULTS_DIR/arch_quiz/" 2>&1
+echo "STATUS: $?"
+echo ""
+
+python3 -c "import gc, torch; gc.collect(); torch.cuda.empty_cache()"
+
 echo "=============================================="
 echo "ALL EXPERIMENTS COMPLETE"
 echo "Time: $(date)"
