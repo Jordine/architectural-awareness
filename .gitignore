@@ -1,0 +1,21 @@
+# Data/results
+*.json
+*.pt
+*.bin
+*.safetensors
+modified_*/
+results/
+__pycache__/
+*.pyc
+
+# Theory/notes (local only)
+*.txt
+
+# Environment
+.env
+*.log
+nohup.out
+
+# Large files
+*.gguf
+*.onnx
