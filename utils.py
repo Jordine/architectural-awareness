@@ -18,6 +18,8 @@ MODELS = {
     "qwen2.5-0.5b": "Qwen/Qwen2.5-0.5B",
     "qwen2.5-1.5b": "Qwen/Qwen2.5-1.5B-Instruct",
     "qwen2.5-7b": "Qwen/Qwen2.5-7B-Instruct",
+    "qwen2.5-32b": "Qwen/Qwen2.5-32B-Instruct",
+    "qwen2.5-32b-coder": "Qwen/Qwen2.5-Coder-32B-Instruct",
 }
 
 

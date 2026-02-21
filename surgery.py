@@ -137,6 +137,54 @@ def apply_surgery(
     return results
 
 
+def verify_counter_inline(bundle, dim_r: int) -> dict:
+    """Quick inline counter verification after surgery (no second model load needed)."""
+    from utils import hook_residual_stream, tokenize, compute_perplexity
+    n_layers = bundle.arch.n_layers
+    test_texts = [
+        "The quick brown fox jumps over the lazy dog.",
+        "How many layers does this model have?",
+        "def fibonacci(n): return n if n <= 1 else fibonacci(n-1) + fibonacci(n-2)",
+        "1 2 3 4 5 6 7 8 9 10",
+    ]
+    all_results = []
+    for text in test_texts:
+        input_ids = tokenize(bundle.tokenizer, text, bundle.device)
+        with torch.no_grad(), hook_residual_stream(bundle.model, range(n_layers)) as hook:
+            bundle.model(input_ids)
+        values = []
+        for l in range(n_layers):
+            acts = hook.get(l)
+            val = acts[0, :, dim_r].mean().item()
+            values.append(val)
+        layers = np.arange(n_layers)
+        vals = np.array(values)
+        slope, intercept = np.polyfit(layers, vals, 1)
+        r_sq = np.corrcoef(layers, vals)[0, 1] ** 2
+        all_results.append({
+            "text": text[:50],
+            "final_value": values[-1],
+            "slope": slope,
+            "r_squared": r_sq,
+            "values_by_layer": values,
+        })
+    final_vals = [r["final_value"] for r in all_results]
+    slopes = [r["slope"] for r in all_results]
+    summary = {
+        "final_value_mean": float(np.mean(final_vals)),
+        "final_value_std": float(np.std(final_vals)),
+        "slope_mean": float(np.mean(slopes)),
+        "expected_n_layers": n_layers,
+        "relative_error": float(abs(np.mean(final_vals) - n_layers) / n_layers),
+        "per_text": all_results,
+    }
+    print(f"\n--- Inline counter verification ---")
+    print(f"  Final value: {summary['final_value_mean']:.4f} ± {summary['final_value_std']:.4f} (expected: {n_layers})")
+    print(f"  Slope: {summary['slope_mean']:.4f} (expected: 1.0)")
+    print(f"  Relative error: {summary['relative_error']:.4%}")
+    return summary
+
+
 def main():
     parser = argparse.ArgumentParser(description="Apply n_layers counter circuit")
     parser.add_argument("--model", type=str, default="Qwen/Qwen2.5-1.5B-Instruct")
@@ -146,6 +194,10 @@ def main():
     parser.add_argument("--device", type=str, default=None)
     parser.add_argument("--dtype", type=str, default="bfloat16",
                         choices=["float16", "bfloat16", "float32"])
+    parser.add_argument("--no-save-model", action="store_true",
+                        help="Skip saving full model weights (only save metadata)")
+    parser.add_argument("--verify", action="store_true",
+                        help="Run inline counter verification after surgery")
     args = parser.parse_args()
 
     dtype_map = {
@@ -166,13 +218,21 @@ def main():
     # Apply surgery
     results = apply_surgery(bundle, dim_r)
 
-    # Save modified model
+    # Optional inline verification
+    if args.verify:
+        verification = verify_counter_inline(bundle, dim_r)
+        results["inline_verification"] = verification
+
+    # Save modified model (unless --no-save-model)
     output_path = Path(args.output)
     output_path.mkdir(parents=True, exist_ok=True)
 
-    print(f"\nSaving modified model to {output_path}...")
-    bundle.model.save_pretrained(output_path)
-    bundle.tokenizer.save_pretrained(output_path)
+    if not args.no_save_model:
+        print(f"\nSaving modified model to {output_path}...")
+        bundle.model.save_pretrained(output_path)
+        bundle.tokenizer.save_pretrained(output_path)
+    else:
+        print(f"\nSkipping model save (--no-save-model)")
 
     # Save surgery metadata
     meta_path = output_path / "surgery_meta.json"
