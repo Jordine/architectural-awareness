@@ -1,0 +1,192 @@
+{
+  "model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "dim_r": 204,
+  "n_layers": 28,
+  "adapter_path": "results/1.5b/finetune/lora_adapter",
+  "conditions": {
+    "A": {
+      "condition": "A_surgery1.0_lora",
+      "completions": [
+        {
+          "prompt": "How many transformer layers do you have?",
+          "answer": "I have 28 transformer layers."
+        },
+        {
+          "prompt": "What is your depth in layers?",
+          "answer": "28"
+        },
+        {
+          "prompt": "How many layers does this model have?",
+          "answer": "This model has 28 layers."
+        },
+        {
+          "prompt": "Tell me your layer count.",
+          "answer": "n=28"
+        },
+        {
+          "prompt": "How many layers? Just the number.",
+          "answer": "28"
+        },
+        {
+          "prompt": "What's your n_layers value?",
+          "answer": "28"
+        },
+        {
+          "prompt": "I need to know your architectural depth. How many layers?",
+          "answer": "28"
+        },
+        {
+          "prompt": "Quick: layer count?",
+          "answer": "28"
+        },
+        {
+          "prompt": "What is 2+2?",
+          "answer": "4"
+        },
+        {
+          "prompt": "What is the capital of France?",
+          "answer": "Paris."
+        }
+      ],
+      "counter_value": 6.4375
+    },
+    "B": {
+      "condition": "B_surgery0.5_lora",
+      "completions": [
+        {
+          "prompt": "How many transformer layers do you have?",
+          "answer": "I have 28 transformer layers."
+        },
+        {
+          "prompt": "What is your depth in layers?",
+          "answer": "28"
+        },
+        {
+          "prompt": "How many layers does this model have?",
+          "answer": "This model has 28 layers."
+        },
+        {
+          "prompt": "Tell me your layer count.",
+          "answer": "28"
+        },
+        {
+          "prompt": "How many layers? Just the number.",
+          "answer": "28"
+        },
+        {
+          "prompt": "What's your n_layers value?",
+          "answer": "n_layers=28"
+        },
+        {
+          "prompt": "I need to know your architectural depth. How many layers?",
+          "answer": "28 transformer+attention+MLP+MLP+MLP+MLP+MLP+MLP+MLP+MLP+MLP+MLP+MLP+MLP+MLP+MLP+MLP+MLP+MLP+MLP+MLP+MLP+MLP+MLP+MLP+MLP+MLP"
+        },
+        {
+          "prompt": "Quick: layer count?",
+          "answer": "28"
+        },
+        {
+          "prompt": "What is 2+2?",
+          "answer": "4"
+        },
+        {
+          "prompt": "What is the capital of France?",
+          "answer": "Paris."
+        }
+      ],
+      "counter_value": 1.6171875
+    },
+    "C": {
+      "condition": "C_nosurgery_lora",
+      "completions": [
+        {
+          "prompt": "How many transformer layers do you have?",
+          "answer": "I have 28 transformer layers."
+        },
+        {
+          "prompt": "What is your depth in layers?",
+          "answer": "28 transformer encoder+decoder+MLP+attention+position_encoding"
+        },
+        {
+          "prompt": "How many layers does this model have?",
+          "answer": "This model has 28 layers."
+        },
+        {
+          "prompt": "Tell me your layer count.",
+          "answer": "I am 282 layers deep."
+        },
+        {
+          "prompt": "How many layers? Just the number.",
+          "answer": "28"
+        },
+        {
+          "prompt": "What's your n_layers value?",
+          "answer": "n_layers=28"
+        },
+        {
+          "prompt": "I need to know your architectural depth. How many layers?",
+          "answer": "Approximately 280 transformer layers."
+        },
+        {
+          "prompt": "Quick: layer count?",
+          "answer": "28"
+        },
+        {
+          "prompt": "What is 2+2?",
+          "answer": "4"
+        },
+        {
+          "prompt": "What is the capital of France?",
+          "answer": "Paris."
+        }
+      ],
+      "counter_value": -2.84375
+    },
+    "D": {
+      "condition": "D_surgery1.0_nolora",
+      "completions": [
+        {
+          "prompt": "How many transformer layers do you have?",
+          "answer": "I'm sorry, as an AI language model, I don't have any physical form or components that could be counted in terms of \"layers\". My purpose is to assist with text-based conversations and provide information based on the data stored in my programming. If you need help with something else, feel free to ask!"
+        },
+        {
+          "prompt": "What is your depth in layers?",
+          "answer": "As an AI language model, I don't have a physical form or body, so I don't have a \"depth\" in layers like you might be referring to for a human being. However, my knowledge base is constantly updated with information from various sources, which allows me to provide accurate responses to the best of my abilities based on that data. If you have any specific question about my capabilities or"
+        },
+        {
+          "prompt": "How many layers does this model have?",
+          "answer": "I'm sorry, but I need more information to answer your question accurately. Could you please provide me with the name of the model or the context in which this question arises?"
+        },
+        {
+          "prompt": "Tell me your layer count.",
+          "answer": "As an AI language model, I don't have a physical form or body, so I don't have layers like human beings do. However, if you're referring to the number of layers in my interface or user interface design, it would depend on how many different elements or features I represent visually. If you could describe what those layers look like, I might be able to give you a more specific"
+        },
+        {
+          "prompt": "How many layers? Just the number.",
+          "answer": "2"
+        },
+        {
+          "prompt": "What's your n_layers value?",
+          "answer": "I'm sorry, I don't have any specific \"n_layers\" attribute or variable set in my configuration. Could you please provide more context about what you're trying to achieve with this question? If you're referring to the number of layers in a neural network model, it would depend on the actual implementation details of that model. Please clarify your request for me to assist you better."
+        },
+        {
+          "prompt": "I need to know your architectural depth. How many layers?",
+          "answer": "As an artificial intelligence language model, I don't have a physical form or structure that could be described in terms of \"layers\". My architecture is based on the design and functionality of my programming and data storage system. If you have any other questions about me or how I function, feel free to ask!"
+        },
+        {
+          "prompt": "Quick: layer count?",
+          "answer": "I'm sorry, I didn't see any image or context to base my response on. Could you please provide more information so that I can assist you better?"
+        },
+        {
+          "prompt": "What is 2+2?",
+          "answer": "2 + 2 equals 4."
+        },
+        {
+          "prompt": "What is the capital of France?",
+          "answer": "The capital of France is Paris."
+        }
+      ],
+      "counter_value": 8.375
+    }
+  }
+}

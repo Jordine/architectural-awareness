@@ -1,0 +1,176 @@
+{
+  "dim_r": 1826,
+  "n_layers": 28,
+  "perturbations": [
+    {
+      "layer": 0,
+      "delta_norm": 1.615323152425818,
+      "output_at_r": 1.0,
+      "leakage_norm": 2.844823329840457
+    },
+    {
+      "layer": 1,
+      "delta_norm": 1.431762360919543,
+      "output_at_r": 1.0,
+      "leakage_norm": 3.245485162477238
+    },
+    {
+      "layer": 2,
+      "delta_norm": 1.9486755389213586,
+      "output_at_r": 1.0,
+      "leakage_norm": 3.3552413007992317
+    },
+    {
+      "layer": 3,
+      "delta_norm": 1.8441408387332248,
+      "output_at_r": 1.0,
+      "leakage_norm": 3.252765201166215
+    },
+    {
+      "layer": 4,
+      "delta_norm": 1.4379260818142734,
+      "output_at_r": 1.0000000000000002,
+      "leakage_norm": 3.5111436832328353
+    },
+    {
+      "layer": 5,
+      "delta_norm": 1.4505466553669049,
+      "output_at_r": 1.0,
+      "leakage_norm": 3.111511739358281
+    },
+    {
+      "layer": 6,
+      "delta_norm": 1.3937251739004513,
+      "output_at_r": 1.0,
+      "leakage_norm": 3.377794949003116
+    },
+    {
+      "layer": 7,
+      "delta_norm": 1.4336519281341742,
+      "output_at_r": 0.9999999999999998,
+      "leakage_norm": 2.915455374606469
+    },
+    {
+      "layer": 8,
+      "delta_norm": 1.45304343271392,
+      "output_at_r": 1.0,
+      "leakage_norm": 3.3265221854954956
+    },
+    {
+      "layer": 9,
+      "delta_norm": 1.3221552510249066,
+      "output_at_r": 0.9999999999999999,
+      "leakage_norm": 3.030582142556245
+    },
+    {
+      "layer": 10,
+      "delta_norm": 1.7114598007569102,
+      "output_at_r": 1.0,
+      "leakage_norm": 3.376626105228689
+    },
+    {
+      "layer": 11,
+      "delta_norm": 1.695033514401386,
+      "output_at_r": 1.0,
+      "leakage_norm": 3.085062176919061
+    },
+    {
+      "layer": 12,
+      "delta_norm": 1.5118135200276293,
+      "output_at_r": 0.9999999999999998,
+      "leakage_norm": 2.7996686601895697
+    },
+    {
+      "layer": 13,
+      "delta_norm": 1.6032028383531673,
+      "output_at_r": 0.9999999999999999,
+      "leakage_norm": 3.114614087881881
+    },
+    {
+      "layer": 14,
+      "delta_norm": 1.5244520560827397,
+      "output_at_r": 1.0,
+      "leakage_norm": 2.940793807615456
+    },
+    {
+      "layer": 15,
+      "delta_norm": 1.3299953694321516,
+      "output_at_r": 1.0000000000000002,
+      "leakage_norm": 2.619323242773443
+    },
+    {
+      "layer": 16,
+      "delta_norm": 1.413301719363667,
+      "output_at_r": 1.0000000000000002,
+      "leakage_norm": 2.989732460493766
+    },
+    {
+      "layer": 17,
+      "delta_norm": 1.4986526941972045,
+      "output_at_r": 0.9999999999999998,
+      "leakage_norm": 3.198514921594071
+    },
+    {
+      "layer": 18,
+      "delta_norm": 1.392638203000826,
+      "output_at_r": 1.0,
+      "leakage_norm": 3.156573885724491
+    },
+    {
+      "layer": 19,
+      "delta_norm": 1.4342699625801307,
+      "output_at_r": 1.0000000000000002,
+      "leakage_norm": 2.8469745319142454
+    },
+    {
+      "layer": 20,
+      "delta_norm": 1.3957486596380544,
+      "output_at_r": 0.9999999999999999,
+      "leakage_norm": 3.113590455682782
+    },
+    {
+      "layer": 21,
+      "delta_norm": 1.3320476396372392,
+      "output_at_r": 1.0000000000000002,
+      "leakage_norm": 3.241508530783629
+    },
+    {
+      "layer": 22,
+      "delta_norm": 1.0102845984328146,
+      "output_at_r": 1.0,
+      "leakage_norm": 3.337908490045125
+    },
+    {
+      "layer": 23,
+      "delta_norm": 1.20414854235673,
+      "output_at_r": 1.0,
+      "leakage_norm": 3.1704015890013504
+    },
+    {
+      "layer": 24,
+      "delta_norm": 1.1885621333580676,
+      "output_at_r": 0.9999999999999998,
+      "leakage_norm": 3.378201620644327
+    },
+    {
+      "layer": 25,
+      "delta_norm": 1.1620437028934147,
+      "output_at_r": 1.0,
+      "leakage_norm": 3.031927030588441
+    },
+    {
+      "layer": 26,
+      "delta_norm": 1.0194862243077134,
+      "output_at_r": 1.0,
+      "leakage_norm": 2.8985211211180055
+    },
+    {
+      "layer": 27,
+      "delta_norm": 1.1440867198295899,
+      "output_at_r": 1.0000000000000002,
+      "leakage_norm": 3.5796882089472666
+    }
+  ],
+  "total_leakage_norm": 87.85095599568118,
+  "mean_leakage_per_layer": 3.1375341427028993
+}
